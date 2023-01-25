@@ -1,0 +1,1 @@
+python main.py --dbPath "D:\Program Files (x86)\DesignBuilder\DesignBuilder.exe" --jobServerDir "D:\ProgramData\DesignBuilder\JobServer\Users\User" --outputSubDirs --originalNames --report "D:\cly\Documents\DesignBuilder Data\BatchInput" "D:\cly\Documents\DesignBuilder Data\BatchOutput"
