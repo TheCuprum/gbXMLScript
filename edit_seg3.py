@@ -6,7 +6,7 @@ from lxml import etree
 from calculator.segment3_calculator_builder import Segment3CalculatorBuilder
 from gb_tool import set_polyloop_and_surface
 
-def run(seg3_builder: Segment3CalculatorBuilder):
+def edit_xml(seg3_builder: Segment3CalculatorBuilder):
     model = seg3_builder.build_calculator()
     cubiod_surfaces = model.generate_surfaces()
     # print(cubiod_surfaces)
@@ -52,4 +52,4 @@ if __name__ == '__main__':
     # builder.height
     # builder.left_angle
     # builder.right_angle
-    run(builder)
+    edit_xml(builder)

@@ -6,3 +6,4 @@ pip_packages/
 dbbatch/
 
 share/
+run.py

@@ -6,7 +6,7 @@ from calculator.structure_math.vec3d import ZERO as Vec3D_ZERO
 from calculator.structure_math.vec3d import Vec3D
 from gb_tool import set_polyloop_and_surface
 
-def run() -> None:
+def edit_xml() -> None:
     block = CuboidCalculator(Vec3D_ZERO, Vec3D(10, 10, 6))
     cubiod_surfaces = block.generate_surfaces()
     # print(cubiod_surfaces)
@@ -38,4 +38,4 @@ def run() -> None:
 
 
 if __name__ == '__main__':
-    run()
+    edit_xml()
