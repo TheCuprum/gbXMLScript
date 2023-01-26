@@ -1,5 +1,5 @@
 $dir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-Set-Location $dir
+Set-Location $dir\..
 
 python -m venv .\_venv
 & .\_venv\Scripts\Activate.ps1
