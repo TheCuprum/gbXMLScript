@@ -1,3 +1,4 @@
+import os
 from math import pi as PI
 
 import xgbxml
@@ -6,7 +7,8 @@ from lxml import etree
 from calculator.segment3_calculator_builder import Segment3CalculatorBuilder
 from gb_tool import set_polyloop_and_surface
 
-def edit_xml(seg3_builder: Segment3CalculatorBuilder):
+
+def edit_xml(seg3_builder: Segment3CalculatorBuilder, backup_name=None):
     model = seg3_builder.build_calculator()
     cubiod_surfaces = model.generate_surfaces()
     # print(cubiod_surfaces)
@@ -34,6 +36,8 @@ def edit_xml(seg3_builder: Segment3CalculatorBuilder):
 
     # save the edited file
     tree.write('xml/edited_gbxml_file.xml', pretty_print=True)
+    if backup_name is not None:
+        tree.write(os.path.join('xml', backup_name), pretty_print=True)
 
 
 if __name__ == '__main__':
