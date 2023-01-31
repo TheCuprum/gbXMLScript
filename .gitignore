@@ -7,3 +7,6 @@ dbbatch/
 
 share/
 run.py
+run_test.py
+
+xml/

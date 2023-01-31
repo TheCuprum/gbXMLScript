@@ -34,7 +34,7 @@ def run_test():
     job_server_dir = ''
 
     builder = Segment3CalculatorBuilder()
-
+    
     for i in range(0): # need loop condition
         # builder.left_length
         # builder.left_width
@@ -45,8 +45,9 @@ def run_test():
         # builder.height
         # builder.left_angle
         # builder.right_angle
-
         shutil.copytree(input_dir, input_backup_dir, dirs_exist_ok=True) # backup models
+        shutil.rmtree(output_dir)
+        os.makedirs(output_dir, exist_ok=True) # empty output dir
 
         edit_xml(builder)
         run_db(input_dir, output_dir, db_path, job_server_dir)
