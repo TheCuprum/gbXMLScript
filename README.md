@@ -67,4 +67,4 @@ namespace script
 ## Coding Documents
 
 - **Segment3CalculatorBuilder & Segment3Calculator**:
-  - 见源码注释 [calculator/segment3_calculator_builder.py](calculator/segment3_calculator_builder.py)
+  - 见源码注释 [calculator/segment3_calculator_builder.py](calculator/segment3_calculator_builder.py)，[calculator/segment3_calculator.py](calculator/segment3_calculator.py)
