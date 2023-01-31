@@ -1,6 +1,6 @@
 # gbXMLScript
 
-自动化构建筑模型 gbXML 文件并导入 DesignBuilder 进行模拟
+自动化构建建筑模型 gbXML 文件并导入 DesignBuilder 进行模拟
 
 ## 依赖
 
